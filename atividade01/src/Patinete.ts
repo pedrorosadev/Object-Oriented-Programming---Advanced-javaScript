@@ -7,6 +7,5 @@ export class Patinete extends Veiculo{
         super(typeVehiculo, amountOfPassengers, isMotorized, isEletric, isAmphibian);
         this.price = price;
     }
-
 }
 

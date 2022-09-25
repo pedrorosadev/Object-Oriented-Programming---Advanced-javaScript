@@ -1,20 +1,11 @@
-interface INewVeiculo{
-    typeVehiculo:string;
-    amountOfPassengers:number;
-    isMotorized:boolean;
-    isEletric:boolean;
-    isAmphibian:boolean;
-
-}
-
-export abstract class Veiculo implements INewVeiculo{
+export abstract class Veiculo{
     public typeVehiculo:string;
-    public amountOfPassengers:number;
+    public amountOfPassengers?:number;
     public isMotorized:boolean;
     public isEletric:boolean;
     public isAmphibian:boolean;
 
-    constructor({typeVehiculo, amountOfPassengers, isMotorized, isEletric, isAmphibian}:INewVeiculo){
+    constructor(typeVehiculo, amountOfPassengers, isMotorized, isEletric, isAmphibian){
         this.typeVehiculo = typeVehiculo;
         this.amountOfPassengers = amountOfPassengers;
         this.isMotorized = isMotorized;
